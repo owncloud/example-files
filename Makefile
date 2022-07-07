@@ -4,7 +4,7 @@ app_name=$(notdir $(CURDIR))
 build_dir=$(CURDIR)/build
 dist_dir=$(build_dir)/dist
 src_files=
-src_dirs=Documents Photos
+src_dirs=Documents Photos 'Learn more about ownCloud'
 all_src=$(src_dirs) $(src_files)
 
 .DEFAULT_GOAL := help
