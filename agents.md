@@ -13,7 +13,6 @@ This file provides context for AI coding agents (Claude Code, GitHub Copilot, Cu
 
 - `Documents/` -- Example document files
 - `Photos/` -- Example photo files
-- `Learn more about ownCloud/` -- Introductory materials
 - `Makefile` -- Packaging targets
 
 ## Development Conventions
@@ -35,7 +34,7 @@ Not detected
 ```
 
 ## Important Constraints
-- All code contributions must be compatible with the **the license specified in the repository** license
+- All contributions must be compatible with the repository's **Apache License 2.0** (see `LICENSE`)
 - Do not introduce new **copyleft-licensed dependencies** (GPL, AGPL, LGPL, MPL) without explicit discussion in an issue first. This is especially important for repos migrating to Apache 2.0.
 - Do not introduce new dependencies without discussion in an issue first
 
@@ -48,8 +47,8 @@ Not detected
 - Never introduce actions from unverified third parties.
 
 ### Dependency Management
-- Dependabot is configured for automated dependency updates.
-- Review and merge Dependabot PRs as part of regular maintenance.
+- This repository ships only static example files and currently has no package dependencies.
+- If dependencies are ever introduced, configure Dependabot for the affected ecosystem per OSPO policy and review/merge its PRs as part of regular maintenance.
 - Do not introduce new dependencies without discussion in an issue first.
 
 ### Git Workflow
