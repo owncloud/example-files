@@ -4,23 +4,23 @@
 
 [![License](https://img.shields.io/badge/License-See%20Repository-blue.svg)](LICENSE) [![ownCloud OSPO](https://img.shields.io/badge/OSPO-ownCloud-blue)](https://kiteworks.com/opensource)
 
-A collection of example documents and photos used as the default user home skeleton in ownCloud. When a new user account is created, these files are copied into the user's home directory to provide a starting set of sample content including documents and photos.
+A collection of example documents and photos used as the default user home skeleton in ownCloud Classic. When a new user account is created, these files are copied into the user's home directory to provide a starting set of sample content including documents and photos.
 
 > **Note:** This repository is in maintenance/legacy mode and is no longer actively developed.
 
 ## Getting Started
 
-This repository contains static example files. To use them as a skeleton, place the contents in the ownCloud `core/skeleton/` directory. No build step is required beyond `make dist` for packaging.
+This repository contains static example files. To use them as a skeleton, place the contents in the ownCloud Classic `core/skeleton/` directory. No build step is required beyond `make dist` for packaging.
 
 ## Documentation
 
-- [ownCloud Server Admin Manual](https://doc.owncloud.com/server/latest/admin_manual/)
+- [ownCloud Classic Admin Manual](https://doc.owncloud.com/server/latest/admin_manual/)
 
 ## Part of ownCloud Infrastructure
 
-These example files are used by [ownCloud Server](https://github.com/owncloud/core) as the skeleton directory for new user accounts.
+These example files are used by **ownCloud Classic** (the legacy PHP server, [`owncloud/core`](https://github.com/owncloud/core)) as the skeleton directory for new user accounts.
 
-> **Note:** This repository is currently in Archived/Legacy mode. It is no longer actively maintained.
+> **Note:** ownCloud Classic is the legacy PHP server and is no longer sold. [Infinite Scale (OCIS)](https://github.com/owncloud/ocis) is the current ownCloud product. This repository is in maintenance/legacy mode and is no longer actively maintained.
 
 ## Community & Support
 
@@ -41,7 +41,7 @@ and our [Code of Conduct](CODE_OF_CONDUCT.md) before getting started.
 ### Workflow
 
 - **Rebase Early, Rebase Often!** We use a rebase workflow. Always rebase on the target branch before submitting a PR.
-- **Dependabot**: Automated dependency updates are managed via Dependabot. Review and merge dependency PRs promptly.
+- **Dependencies**: This repository ships only static example files and has no package dependencies. Should any be introduced, dependency updates would be handled per the ownCloud OSPO policy (Dependabot for the affected ecosystem).
 - **Signed Commits**: All commits **must** be PGP/GPG signed. See [GitHub's signing guide](https://docs.github.com/en/authentication/managing-commit-signature-verification).
 - **DCO Sign-off**: Every commit must carry a `Signed-off-by` line:
   ```
@@ -81,9 +81,6 @@ The OSPO is driving a strategic relicensing of ownCloud repositories toward the
 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), following
 the [Apache Software Foundation's third-party license policy](https://www.apache.org/legal/resolved.html).
 
-Individual repositories will migrate as their audit is completed. The LICENSE file
-in each repo reflects its **current** license status (not the target).
-
-**Current license: Not detected.** The OSPO will determine the current license status of this
-repository before planning any migration steps. If you know the intended license, please open an
-issue or contact ospo@kiteworks.com.
+**Current license: Apache License 2.0.** This repository has completed its license audit
+and migration; see [LICENSE](LICENSE). For questions, please open an issue or contact
+ospo@kiteworks.com.
